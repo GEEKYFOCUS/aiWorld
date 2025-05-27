@@ -1,8 +1,7 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
-import Sidebar from "../components/Sidebar";
-import Trends from "../components/Trends";
+import Sidebar from "../../components/Sidebar";
+import Trends from "../../components/Trends";
 import { Provider } from "react-redux";
 import { store } from "@/redux/store";
 import CreatePost from "./components/CreatePost";
@@ -21,13 +20,13 @@ const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 
   return (
     <Provider store={store}>
-      <div className="min-h-screen flex justify-between bg-[#1A1A1A] text-white">
+      <div className="min-h-screen  relative   flex justify-between bg-[#1A1A1A] text-white">
         {/* Sidebar Navigation */}
         <Sidebar />
         {/* Feed Section */}
         <div className="flex-1">
           {children}
-          <CreatePost />
+          {/* <CreatePost /> */}
         </div>
         {/* Trends/Widgets Section */}
         {currentPath === "/home/message" ? "" : <Trends />}
