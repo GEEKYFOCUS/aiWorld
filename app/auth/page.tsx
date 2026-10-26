@@ -1,6 +1,3 @@
-"use client";
-import { logInWithGoogle } from "@/lib/auth";
-
 const SignIn = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center bg-gradient-to-b from-[#2D2A7A] via-[#654EA3] to-[#11998E] text-white">
@@ -8,10 +5,7 @@ const SignIn = () => {
         <h1 className="text-3xl font-bold mb-6">Sign in to AiWorld</h1>
 
         <div className="py-4 space-y-4 w-full max-w-sm">
-          <button
-            onClick={logInWithGoogle}
-            className="bg-white text-black hover:bg-transparent border hover:text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2 w-full transition"
-          >
+          <button className="bg-white text-black hover:bg-transparent border hover:text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2 w-full transition">
             <svg
               viewBox="0 0 48 48"
               xmlns="http://www.w3.org/2000/svg"

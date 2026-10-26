@@ -26,5 +26,5 @@ export const contextSlice = createSlice({
   // Other reducer functions...
 });
 
-export const { togglePost, closePost, openPost } = contextSlice.actions;      
+export const { togglePost, closePost, openPost } = contextSlice.actions;
 export default contextSlice.reducer;
