@@ -14,14 +14,3 @@ const eslintConfig = [
 ];
 
 export default eslintConfig;
-
-module.exports = {
-  overrides: [
-    {
-      files: ["eslint.config.js", "eslint.config.ts", "eslint.config.mjs"],
-      rules: {
-        "@typescript-eslint/no-explicit-any": "off",
-      },
-    },
-  ],
-};
