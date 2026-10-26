@@ -2,7 +2,7 @@ import React from "react";
 
 const Trends = () => {
   return (
-    <aside className="  w-[30%] lg:w-[23%] border-l border-[#2f3336] p-4 hidden lg:block">
+    <aside className="w-[30%] lg:w-[23%] border-l border-[#2f3336] p-4 hidden lg:block">
       <section>
         <h2 className="font-bold text-lg mb-4">Find on AIWorld</h2>
         <div className="p-5 overflow-hidden w-[55px] h-[55px] hover:w-[270px] bg-[#1da0f237] mb-6 shadow-[2px_2px_20px_rgba(0,0,0,0.08)] rounded-full flex group items-center hover:duration-300 duration-300">
